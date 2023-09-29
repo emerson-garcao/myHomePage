@@ -3,3 +3,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --text-color: #ffffff
+}
+body{
+  background: url(./assets/bg-mobile.png) no-repeat top center/ cover;
+  height: 100vh;
+}
+body *{
+ font-family: 'Inter', sans-serif;
+ color: var(--text-color);
+}
+
+#container{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 588px;
+  height: 712px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+#profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+#profile img{
+  width: 112px;
+  height: 112px;
+}
+#profile p{
+  margin-top: 8px;
+  line-height: 24px;
+  font-weight: 500;
+}
