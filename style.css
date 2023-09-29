@@ -23,6 +23,7 @@ body *{
   margin: 56px auto 0;
   padding: 0 24px;
 }
+/* HEADER */
 #profile{
   display: flex;
   flex-direction: column;
@@ -37,4 +38,30 @@ body *{
   margin-top: 8px;
   line-height: 24px;
   font-weight: 500;
+}
+/* LINKS */
+#content ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+
+}
+#content ul li a{
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);/* rodar no safari */
+  text-decoration: none;
+  font-weight: 500;
+}
+#content ul li a:hover{
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff;
 }
